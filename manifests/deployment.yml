@@ -1,19 +1,19 @@
 apiVersion : apps/v1
 kind: Deployment
 metadata:
-  name: rkubernetespipeline 
+  name: kubernetes-pipeline 
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: rkubernetespipeline
+      app: kubernetes-pipeline
   template:
     metadata:
       labels:
-        app: rkubernetespipeline 
+        app: kubernetes-pipeline 
     spec:
       containers:
-        - name: rkubernetespipeline 
-          image: onlyregistryhere.azurecr.io/rkubernetespipeline
+        - name: kubernetes-pipeline 
+          image: onlyregistryhere.azurecr.io/kubernetes-pipeline
           ports:
           - containerPort: 7000
