@@ -7,17 +7,17 @@ const express_1 = __importDefault(require("express"));
 const app = (0, express_1.default)();
 const port = 3000;
 app.get("/home", (req, res) => {
-    console.log("Home page!");
+    console.log("Home page");
     return res.status(200).json({
         success: true,
-        message: "Home page!"
+        message: "Home page"
     });
 });
 app.get("/about", (req, res) => {
-    console.log("About page!");
+    console.log("About page");
     return res.status(200).json({
         success: true,
-        message: "About page!"
+        message: "About page"
     });
 });
 app.get("/contact", (req, res) => {
@@ -28,7 +28,7 @@ app.get("/contact", (req, res) => {
     });
 });
 app.get("*", (req, res) => {
-    console.log("Page not found!");
+    console.log("Page not found");
     return res.status(404).json({
         success: false,
         message: "Page not found"
