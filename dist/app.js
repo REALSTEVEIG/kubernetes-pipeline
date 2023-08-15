@@ -30,7 +30,7 @@ app.get("/contact", (req, res) => {
 app.get("*", (req, res) => {
     return res.status(404).json({
         success: false,
-        message: "Page not found"
+        message: "Page not found!"
     });
 });
 app.listen(port, () => {
