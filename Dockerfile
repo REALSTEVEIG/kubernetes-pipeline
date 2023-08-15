@@ -4,15 +4,14 @@ FROM node:latest
 WORKDIR /app
 
 # Install app dependencies
-RUN npm install
-
-# copy all files from current directory to working directory in image
-COPY . .
-
 COPY package*.json ./
 
-# expose port 3000
+
+# Bundle app source
+COPY . .
+
+# Expose port 3000
 EXPOSE 3000
 
-# start app
-CMD ["npm", "start"]
+# Run app
+CMD [ "npm", "start" ]
