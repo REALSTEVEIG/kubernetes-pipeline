@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-    name: kubernetespipeline
+    name: kubernetes-pipeline
 spec:
     type: LoadBalancer
     ports:
     - port: 3000 
     selector:
-        app: kubernetespipeline
+        app: kubernetes-pipeline
