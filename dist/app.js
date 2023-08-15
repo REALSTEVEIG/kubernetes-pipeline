@@ -10,21 +10,21 @@ app.get("/home", (req, res) => {
     console.log("Home page!");
     return res.status(200).json({
         success: true,
-        message: "Home page"
+        message: "Home page!"
     });
 });
 app.get("/about", (req, res) => {
     console.log("About page!");
     return res.status(200).json({
         success: true,
-        message: "About page"
+        message: "About page!"
     });
 });
 app.get("/contact", (req, res) => {
     console.log("Contact page!");
     return res.status(200).json({
         success: true,
-        message: "Contact page"
+        message: "Contact page!"
     });
 });
 app.get("*", (req, res) => {

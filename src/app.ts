@@ -8,7 +8,7 @@ app.get("/home", (req: Request, res: Response) => {
     console.log("Home page!")
     return res.status(200).json({
         success: true,
-        message: "Home page"
+        message: "Home page!"
     })
 })
 
@@ -16,7 +16,7 @@ app.get("/about", (req: Request, res: Response) => {
     console.log("About page!")
     return res.status(200).json({
         success: true,
-        message: "About page"
+        message: "About page!"
     })
 })
 
@@ -24,7 +24,7 @@ app.get("/contact", (req: Request, res: Response) => {
     console.log("Contact page!")
     return res.status(200).json({
         success: true,
-        message: "Contact page"
+        message: "Contact page!"
     })
 })
 
