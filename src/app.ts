@@ -31,7 +31,7 @@ app.get("/contact", (req: Request, res: Response) => {
 app.get("*", (req: Request, res: Response) => {
     return res.status(404).json({
         success: false,
-        message: "Page not found!"
+        message: "Page not found"
     })
 })
 
