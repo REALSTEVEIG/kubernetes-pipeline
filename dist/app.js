@@ -7,21 +7,21 @@ const express_1 = __importDefault(require("express"));
 const app = (0, express_1.default)();
 const port = 3000;
 app.get("/home", (req, res) => {
-    console.log("Home page");
+    console.log("Home page!");
     return res.status(200).json({
         success: true,
         message: "Home page"
     });
 });
 app.get("/about", (req, res) => {
-    console.log("About page");
+    console.log("About page!");
     return res.status(200).json({
         success: true,
         message: "About page"
     });
 });
 app.get("/contact", (req, res) => {
-    console.log("Contact page");
+    console.log("Contact page!");
     return res.status(200).json({
         success: true,
         message: "Contact page"
