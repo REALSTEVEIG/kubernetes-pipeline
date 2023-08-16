@@ -28,12 +28,12 @@ app.get("/contact", (req, res) => {
     });
 });
 app.get("*", (req, res) => {
-    console.log("Page not found!");
+    console.log("Page not found!!");
     return res.status(404).json({
         success: false,
-        message: "Page not found!"
+        message: "Page not found!!"
     });
 });
 app.listen(port, () => {
-    console.log(`Server is running on port ${port}`);
+    console.log(`Server is running on port ${port}!!`);
 });
